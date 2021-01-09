@@ -138,6 +138,7 @@ if driver.title == "Facebook":
         pass
     wait_for_render()
     wait_for_render()
+
     try:
          notifications_enable_button = driver.find_element_by_xpath("//*[@id=\"modal-manager\"]/div/div/div/div/div[3]/button[2]")
          notifications_enable_button.click()
