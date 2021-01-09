@@ -10,8 +10,8 @@ driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 TINDER_URL = "http://www.tinder.com"
 
-FACEBOOK_EMAIL = "michael_hutchinson@aol.com"
-FACEBOOK_PWD = "Nico0311"
+FACEBOOK_EMAIL = "XXXXXXXXXXXXXXXXXXXX"
+FACEBOOK_PWD = "XXXXXXXX"
 
 
 def wait_for_render():
@@ -41,6 +41,7 @@ def convert_to_super_like(driver_x):
         if tinder_plus_pop_up:
             no_thanks_button = driver_x.find_element_by_xpath("//*[@id='modal-manager']/div/div/div[3]/button[2]")
             no_thanks_button.click()
+
 
 def process_tinder_home_screen_pop_up(driver_x):
     wait_for_render()
