@@ -4,14 +4,15 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 import time
+import os
 
 chrome_driver_path = r'chromedriver.exe'
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 TINDER_URL = "http://www.tinder.com"
 
-FACEBOOK_EMAIL = "XXXXXXXXXXXXXXXXXXXX"
-FACEBOOK_PWD = "XXXXXXXX"
+FACEBOOK_EMAIL = os.environ["FACEBOOK_EMAIL"]
+FACEBOOK_PWD = os.environ["FACEBOOK_PWD"]
 
 
 def wait_for_render():
